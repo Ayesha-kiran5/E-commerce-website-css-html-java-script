@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Methods | Magic Menageries</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: url('bg.jpeg') center/cover no-repeat fixed;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Wrapper for center alignment */
+        .payment-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 100px;
+            padding-bottom: 80px;
+        }
+
+        /* Payment box */
+        .payment-box {
+            background: #ffffff;
+            width: 380px;
+            padding: 35px 30px;
+            border-radius: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .payment-title {
+            font-size: 22px;
+            font-weight: 700;
+            flex: 1;
+            text-align: center;
+        }
+
+        .method-box {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .method-box:hover {
+            background: #646366;
+        }
+
+        .label-text {
+            font-size: 15px;
+            font-weight: 600;
+            margin: 20px 0 10px;
+        }
+
+        .card-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            background: #fafafa;
+        }
+
+        .card-item img {
+            width: 34px;
+        }
+
+        .add-card-btn,
+        .add-method-btn {
+            border: 1px solid #ccc;
+            padding: 12px;
+            border-radius: 12px;
+            text-align: center;
+            background: #fafafa;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .add-card-btn:hover,
+        .add-method-btn:hover {
+            background: #f1eaff;
+        }
+
+        .pay-btn {
+            width: 100%;
+            padding: 12px;
+            border-radius: 12px;
+            background: #e4e2e7;
+            color: rgb(65, 64, 64);
+            font-weight: bold;
+            border: none;
+            margin-top: 18px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px 0;
+            color: #cec7c7;
+            background: rgba(0, 0, 0, 0.6);
+            margin-top: 50px;
+        }
+
+        footer img {
+            width: 28px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- PAYMENT SECTION -->
+    <div class="payment-wrapper">
+        <div class="payment-box">
+
+            <!-- HEADER -->
+            <div class="d-flex align-items-center mb-3">
+                <span style="font-size:22px; cursor:pointer;" onclick="history.back()">←</span>
+                <div class="payment-title">Payment Methods</div>
+            </div>
+
+            <!-- PAYMENT OPTIONS -->
+            <div class="method-box">
+                <span>UPI</span>
+                <span>›</span>
+            </div>
+
+            <div class="method-box">
+                <span>Debit Cards</span>
+                <span>›</span>
+            </div>
+
+            <!-- CREDIT CARDS -->
+            <div class="label-text">Credit Cards</div>
+
+            <!-- Card 1 -->
+            <div class="card-item">
+                <div class="d-flex align-items-center">
+                    <img src="Gemini_Generated_Image_u211bou211bou211 (1).png">
+                    <span class="ms-2">Axis Bank xxxx68</span>
+                </div>
+                <input type="radio" name="card">
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card-item">
+                <div class="d-flex align-items-center">
+                    <img src="Gemini_Generated_Image_5xglb35xglb35xgl.png">
+                    <span class="ms-2">VYX Bank xxxx54</span>
+                </div>
+                <input type="radio" name="card">
+            </div>
+
+            <!-- Add New -->
+            <div class="add-card-btn">➕ Add New Card</div>
+
+            <div class="add-method-btn">➕ Add New Payment Method</div>
+
+            <!-- PAY NOW -->
+            <button class="pay-btn" onclick="payNow()">Pay Now</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        MAGIC MENAGERIES<br>
+        FAQ · PRIVACY POLICY · RETURNS<br>
+        CONTACT: magicmenageries@gmail.com<br>
+        PHONE: 034567898089 · ISLAMABAD<br>
+
+        <div class="mt-2">
+            <img src="fb.png">
+            <img src="twitter.png">
+            <img src="ig.png">
+            <img src="linkedin.png">
+        </div>
+    </footer>
+
+    <script>
+        function payNow() {
+            alert("Processing Payment...");
+        }
+    </script>
+
+</body>
+
+</html>

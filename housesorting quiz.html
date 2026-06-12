@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Sorting Quiz</title>
+
+    <style>
+        * {
+            margin: 70;
+            padding: 70;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cinzel', serif;
+            background: url(bg.jpeg) center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            position: relative;
+        }
+
+        /* House Banners */
+        .banner {
+            width: 22%;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            border: 4px solid #070606;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .banner:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(54, 53, 53, 0.7);
+        }
+
+        /* Dark overlay */
+        .banner::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.45);
+        }
+
+        /* House name */
+        .banner h2 {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 26px;
+            z-index: 2;
+            text-shadow: 1px 1px 4px black;
+        }
+
+        /* Crest image */
+        .banner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Quiz Button */
+        .quiz-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(to right, #413f3f, #535455);
+            padding: 18px 40px;
+            font-size: 22px;
+            border-radius: 12px;
+            border: 3px solid #111;
+            cursor: pointer;
+            font-weight: bold;
+            color: #000;
+            z-index: 20;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .quiz-btn:hover {
+            background: #ffe680;
+            transform: translate(-50%, -50%) scale(1.05);
+        }
+    </style>
+</head>
+
+
+<div class="container">
+
+    <!-- Ravenclaw -->
+    <div class="banner"
+        style="background-image:url('https://i.pinimg.com/originals/c4/07/f8/c407f809fc712fc51186f06f1f3f18c2.jpg');">
+        <h2>Ravenclaw</h2>
+        <img src="ravennnn.jpeg">
+    </div>
+
+    <!-- Gryffindor -->
+    <div class="banner"
+        style="background-image:url('f:\Ayesha Workspace\WhatsApp Image 2025-11-30 at 7.29.50 PM.jpeg');">
+        <h2>Gryffindor</h2>
+        <img src="gryffindorpeg.jpeg">
+
+    </div>
+    <!-- Slytherin -->
+    <div class="banner"
+        style="background-image: url('https://i.pinimg.com/originals/1c/7b/1e/1c7b1e2f3f5f4f0e4f4e4e4e4e4e4e4e.jpg');">
+        <h2>Slytherin</h2>
+        <img src="sly.jpeg">
+    </div>
+
+    <!-- Hufflepuff -->
+    <div class="banner"
+        style="background-image:url('https://i.pinimg.com/originals/82/a5/09/82a509d5782906deec217d96e8c67d56.jpg');">
+        <h2>Hufflepuff</h2>
+        <img src="huffle.jpeg">
+    </div>
+
+    <!-- Quiz Button -->
+    <a class="quiz-btn" href="quizzz.html">
+        TAKE SORTING QUIZ!
+
+        </body>
+
+</html>
